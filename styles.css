@@ -1,38 +1,3 @@
-/* The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
-- Yellow: hsl(47, 88%, 63%)
-
-### Neutral
-
-- White: hsl(0, 0%, 100%)
-- Grey: hsl(0, 0%, 50%)
-- Black: hsl(0, 0%, 7%)
-
-## Typography
-
-### Body Copy
-
-- Font size (paragraph): 16px
-
-### Font
-
-- Family: [Figtree](https://fonts.google.com/specimen/Figtree)
-- Weights: 500, 800 
-
-Card dimensions:
-Mobile:  327 x 501
-Desktop: 384 x 522
-
-Card padding: 24px
-
-*/
 
 /* STYLES FROM FRONTEND MENTOR */
 .attribution { 
@@ -42,7 +7,7 @@ Card padding: 24px
 }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-/* GLOBAL AND CUSTOM PROPERTIES */
+/* RESETS, GLOBAL AND CUSTOM PROPERTIES */
 
 :root {
     --yellow: hsl(47, 88%, 63%);
@@ -61,6 +26,35 @@ p {
     color: var(--black)
 }
 
+/* MOBILE */
+
+@media only screen and (max-width: 450px) {
+    .card {
+        width: 327px;
+        height: 501px;
+    }
+
+    .illustration-article {
+        width: 279px;
+        height: 200px;
+    }
+}
+
+/* DESKTOP */
+
+@media only screen and (min-width: 450px) {
+    .card {
+        width: 384px;
+        height: 522px;
+    }
+    
+    .illustration-article {
+        width: 336px;
+        height: 200px;
+    }
+  }
+
+/* MAIN ELEMENTS LAYOUT AND STYLING */
 
 body {
     background-color: var(--yellow);
@@ -81,8 +75,6 @@ body {
 }
 
 .illustration-article {
-    width: 279px;
-    height: 200px;
     border-radius: 10px;
     object-fit: cover;
 }
@@ -100,11 +92,28 @@ body {
 }
 
 .not-button p {
+    padding-top: 6px;
+    margin-top: 24px;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+}
+
+footer {
+    width: 129px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* TEXT PROPERTIES */
+
+.not-button p {
     font-size: 12px;
     font-weight: 800;
     text-align: center;
-    padding-top: 6px;
-    margin-top: 24px;
 }
 
 .pub-date {
@@ -129,24 +138,7 @@ h1:hover {
     font-size: 14px;
 }
 
-.avatar {
-    width: 32px;
-    height: 32px;
-}
-
 footer {
-    width: 129px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     font-size: 14px;
     font-weight: 800;
 }
-
-/* CARD DIMENSIONS MOBILE */
-.card {
-    width: 327px;
-    height: 501px;
-}
-
-/* CARD DIMENSIONS DESKTOP */
