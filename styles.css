@@ -60,13 +60,12 @@ body {
     background-color: var(--yellow);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     overflow: hidden;
 }
 
 .card {
+    margin: auto;
     background-color: var(--white);
     padding: 24px;
     border-radius: 20px;
