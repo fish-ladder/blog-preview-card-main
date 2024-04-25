@@ -2,8 +2,7 @@
 /* STYLES FROM FRONTEND MENTOR */
 .attribution { 
     font-size: 11px; 
-    text-align: center; 
-    margin-top: 24px;
+    margin: auto;
 }
 .attribution a { color: hsl(228, 45%, 44%); }
 
@@ -19,40 +18,11 @@
 * {
     box-sizing: border-box;
     font-family: Figtree, sans-serif;
-    padding: 0;
 }
 
 p {
     color: var(--black)
 }
-
-/* MOBILE */
-
-@media only screen and (max-width: 450px) {
-    .card {
-        width: 327px;
-        height: 501px;
-    }
-
-    .illustration-article {
-        width: 279px;
-        height: 200px;
-    }
-}
-
-/* DESKTOP */
-
-@media only screen and (min-width: 450px) {
-    .card {
-        width: 384px;
-        height: 522px;
-    }
-    
-    .illustration-article {
-        width: 336px;
-        height: 200px;
-    }
-  }
 
 /* MAIN ELEMENTS LAYOUT AND STYLING */
 
@@ -104,23 +74,26 @@ footer {
     width: 129px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+}
+
+.author {
+    margin-left: auto;
 }
 
 /* TEXT PROPERTIES */
 
 .not-button p {
-    font-size: 12px;
+    font-size: 0.75em;
     font-weight: 800;
     text-align: center;
 }
 
 .pub-date {
-    font-size: 12px;
+    font-size: 0.75em;
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: 800;
 }
 
@@ -133,11 +106,60 @@ h1:hover {
     color: var(--yellow);
 }
 
+h1:focus {
+    color: var(--yellow);
+}
+
+h1:active {
+    color: var(--yellow);
+}
+
 .description {
-    font-size: 14px;
+    font-size: 0.875em;
+    color: var(--grey);
 }
 
 footer {
     font-size: 14px;
     font-weight: 800;
 }
+
+/* MOBILE */
+
+@media only screen and (max-width: 450px) {
+    .card {
+        width: 327px;
+        height: 501px;
+    }
+
+    .illustration-article {
+        width: 279px;
+        height: 200px;
+    }
+
+    .text-section {
+        font-size: 100%;
+    }
+}
+
+/* DESKTOP */
+
+@media only screen and (min-width: 450px) {
+    .card {
+        width: 384px;
+        height: 522px;
+    }
+    
+    .illustration-article {
+        width: 336px;
+        height: 200px;
+    }
+
+    .text-section {
+        font-size: 113%;
+    }
+
+    footer {
+        margin-top: 35px;
+    }
+  }
